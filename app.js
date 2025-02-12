@@ -79,3 +79,9 @@ b.addEventListener('click',(e) => {
     }
 
 });
+
+a.addEventListener('keyup', (event) => {
+    if(event.key === 'Enter'){
+        b.click();
+    }
+});
