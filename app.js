@@ -74,9 +74,14 @@ b.addEventListener('click',(e) => {
     const c = a.value.trim();
     if(c){
         getWeather(c);
+        setTimeout(() => {
+            a.value = '';
+        }, 3000);
+        
     }else{
         alert('Please enter a location.')
     }
+
 
 });
 
